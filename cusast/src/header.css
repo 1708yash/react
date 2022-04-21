@@ -1,0 +1,120 @@
+
+.header_logo{
+    width: 140px;
+    margin-top: 0px;
+    margin-left: 0px;
+    display: flex;
+}
+.header{
+    height: 100%;
+    display: flex;
+    top:2;
+    align-items: center;
+    background-color: #093b7d;
+    position: sticky;
+    
+    z-index: 100;
+}
+   
+.header_bottom{
+    list-style: none;
+    font-weight: 500;
+    margin: 0;
+    display: flex;
+    align-items: left;
+    background-color: #232f3e;
+    font-size: 14;
+    display: flex;
+    position: sticky;
+    
+}
+.header_unlist{
+   
+    color: #fff;
+    display: flex;
+    align-items: center;
+ 
+}
+.header_li{
+   
+    margin-right: 0px;
+    display: flex;
+    color: #fff;
+}
+.header_search{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 5px;
+    margin-left: 10px;
+    overflow: hidden;
+}
+.header_search >input{
+    width: 80%;
+    height: 20px;
+    padding: 10px;
+    outline: 0;
+    border: 0;
+    display: flex;
+    margin-left: 20px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+   
+}
+.header_seacrchIcon{
+    padding: 8px;
+    height: 10px;
+    background-color: #23c15d;
+    display: flex;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius:5px ;
+}
+.header_option{
+    display: flex;
+    flex-direction: column;
+    margin-left: 9px;
+    margin-right: 9px;
+   
+
+}
+.header_nav{
+    display: flex;
+    align-items: center;
+  
+}
+.header_optionone{
+    font-size: 10px;
+  display: flex;
+    color:#fff;
+}
+.header_optiontwo{
+    display: flex;
+    font-size: 13px;
+    font-weight: 800;
+    color:#fff;
+}
+.header_optionBasket{
+    display: flex;
+    color: #fff;
+    margin-right: 15px;
+    margin-left: 5px;
+}
+.header_optionBasket > span{
+    margin-top: -9px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+.optionbutton{
+    color: #fff;
+    text-overflow: clip;
+    
+
+}

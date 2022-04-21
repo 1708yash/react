@@ -1,0 +1,40 @@
+.about{
+    display: flex;
+    background-color: black;
+    height: 200px;
+    width: 100%;
+    flex-direction: column;
+    color: #fff;
+    padding-top: 20px;
+    padding-left: 20px;
+    z-index: 4;
+    place-items: bottom;
+
+}
+.about_dir{
+    flex-direction: row;
+display: flex
+}
+.list{
+    flex-direction:column;
+    list-style: none;
+}
+.firstlist{
+     list-style: none;
+     flex-direction: column;
+     display: flex;
+}
+.seccondlist{
+    list-style: none;
+    display: flex;
+}
+.thirdlist{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+}
+.contactus{
+    color: #fff;
+    text-align: right;
+    margin-right: 40px;
+}
