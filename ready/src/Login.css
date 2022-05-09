@@ -1,0 +1,23 @@
+.login{
+    width: 600px;
+    height: 500px;
+    -webkit-box-shadow: 3px 4px 21px -8px rgba(28, 4, 28, 0.69);
+    -moz-box-shadow: 3px 4px 21px -8px rgba(28, 4, 28, 0.69);
+    box-shadow: 3px 4px 21px -8px rgba(28, 4, 28, 0.69); 
+    justify-content: center;
+    align-items: center; 
+    display: flex;
+    
+}
+.login__box{
+    width: 200px;
+    height: 300px;
+    margin: 0px;
+    align-items:center;
+}
+.login__left{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+
+}

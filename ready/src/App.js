@@ -1,11 +1,14 @@
-
 import './App.css';
-import Header from './Header';
+import Navbar from './components/Navbar';
+import Login from './pages/Login';
+import Posts from './pages/Posts';
+import Home from './pages/Home.jsx'
 
 function App() {
   return (
     <div className="App">
-  <Header/>
+   <Navbar/>
+   <Login/>
     </div>
   );
 }

@@ -1,0 +1,207 @@
+.login{
+    justify-content: center;
+    align-items:center;
+    display: block;
+    width: 520px;
+    height: 400px;
+    margin: auto;
+    margin-top: 200px;
+    top: 50%;
+    left:50%;
+    -webkit-box-shadow: 1px 3px 12px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 3px 12px 1px rgba(0, 0, 0, 0.75);
+    background-color: white;
+   
+    }
+    
+    .welcome{
+        height: 5px;
+        margin-top: 20%;
+        padding-top: 3px;
+    }
+.login__wrap{
+       display: flex;
+       margin-left: 20px;
+       align-items: inherit; 
+       margin-right: 20px;
+       height: 400px;
+       width: 250px;
+
+    }
+.login__right{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    margin-right: 20px;
+    padding: 8%;
+    position: relative;
+    align-items: center;
+    margin-top: -27px;
+
+}
+.login__left{
+    display: flex;
+    flex-direction: row;
+    margin: 3px;
+    margin-top: 3px;
+}
+.google{
+    display: flex;
+    flex-direction: row;
+    background-color: #db4a39;
+    border-radius: 9px;
+    height: 50px;
+    width: 170px;
+    transition: transform 100ms ease-in-out;
+    cursor: pointer;
+}
+.google:hover {
+    transform: scale(1.07);
+
+}
+.facebook{
+    display: flex;
+    flex-direction: row;
+    background-color:#3b5998;
+    margin-top: 4px;
+    border-radius: 8px;
+    height: 50px;
+    width: 170px;
+    transition: transform 100ms ease-in-out;
+    cursor: pointer;
+}
+.facebook:hover {
+    transform: scale(1.07);
+
+}
+.github{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2px;
+    background-color: #171515;
+    border-radius: 9px;
+    color: white;
+    height: 50px;
+    width: 170px;
+    border-color: #171515;
+    margin-top: 3px;
+    transition: transform 100ms ease-in-out;
+    cursor: pointer;   
+}
+.github:hover {
+    transform: scale(1.07);
+}
+.login__img{
+    display: flex;
+    flex-direction:column;
+
+}
+.googimg{
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 3px;
+    border-radius: 9px;
+
+}
+.fbimg{
+    width: 65px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6px;
+  
+    
+    
+}
+.gitimg{
+    width: 40px;
+     height: 40px;
+     margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius:100% ;
+    margin-left: 14px;
+    background-color: #171515;
+   
+    
+}
+.fbtext{
+    margin-bottom: 2px;
+    text-align: center;   
+}
+.gittext{
+    margin-left: 8px;
+}
+
+.login__direct{
+    padding-right: 40px;
+}
+.submit{
+    height: 30px;
+    width: 164px;
+    margin-top: 8px;
+    border-radius: 4px;
+    border: none;
+    transition: transform 100ms ease-in-out;
+    cursor: pointer;
+    background-color: #24a0ed;
+    color: white;
+    font-weight: 600;
+}
+.submit:hover {
+    transform: scale(1.07);
+}
+.user{
+    border: grey burlywood;
+    border-radius: 20px;
+    height: 28px;
+    width: 200px;
+    margin-top: 23px;
+    align-items: center;
+    padding-left: 10px;
+    transition: transform 100ms ease-in-out;
+    cursor: pointer;
+}
+.user:hover {
+    transform: scale(1.07);
+}
+.password:hover {
+    transform: scale(1.07);
+}
+.password{
+    border: grey burlywood;
+    border-radius: 20px;
+    height: 28px;
+    width: 200px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    transition: transform 100ms ease-in-out;
+    cursor: pointer;
+}
+
+.separate{
+    justify-content: center;
+    align-items: center;
+    
+}
+.or{
+     height: 26px;
+     width: 25px;
+    align-items: center;
+    margin-left: 37px;
+    margin-top: 50px;
+    border: white;
+    background-color: white;
+    border-radius: 20px;
+    font-size: large;
+    font-weight: 600;
+
+}
