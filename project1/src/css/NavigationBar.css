@@ -1,0 +1,182 @@
+.navbar {
+    background-color: #322d34;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: .9vh;
+    
+}
+
+.navbar__slot2 {
+    background-color: #322d34;
+    display: flex;
+    flex-direction: column;
+    outline: none;
+    color: white;
+
+}
+.navbar__slot2 input{
+    background-color: #1f1c21;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+.navbar__slot2 input::placeholder{
+    color: white;
+    justify-content: center;
+    align-items:center;
+}
+
+.slot2__bottom {
+    display: flex;
+    flex-direction: row;
+    background-color: #322d34;
+    justify-content: center;
+    align-items: center;
+}
+.slot2__bottom input{
+    margin-top:11px;
+}
+
+.slot2__button {
+    display: flex;
+    flex-direction: row;
+    border-style: none;
+    border-color: salmon;
+    border-radius: 1vh;
+    margin-top: 10px;
+    margin-left: 4px;
+    background-color: #322d34;
+
+}
+
+.slot2__button svg {
+    display: flex;
+    background-color: transparent;
+    border-radius: 2;
+    border: none;
+    
+}
+.volume{
+    color: white;
+    background-color: #322d34;
+    display: flex;
+    margin-top: 9px;
+    margin-left: 1px;
+}
+.volume svg{
+    background-color: #322d34;
+}
+.navbar__slot4 {
+    background-color: #322d34;
+    display: flex;
+    flex-direction: column;
+}
+.navbar__slot4 input{
+    background-color:#1f1c21;
+    outline: none;
+    border: none;
+}
+.navbar__slot4 input::placeholder{
+    background-color:#1f1c21;
+    color: white;
+    justify-content: center;
+    align-items: center;
+
+}
+.form-check{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 5px;
+    justify-content: center;
+    background-color: #322d34;
+}
+.form-check input::-ms-ticks-after{
+    background-color: salmon;
+}
+.form-check input:active{
+    background-color: salmon;
+}
+.navbar__slot5{
+    display: flex;
+    flex-direction: row;
+    background-color: #322d34;
+    justify-content: center;
+}
+.circl{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+
+}
+.navbarnumber-card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    z-index:1;
+    background-color: #322d34;
+
+}
+.navbarnumber-card svg{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    width: 90px;
+    height: 180px;
+    justify-content: center;
+    background-color: transparent;
+    align-items: center;
+}
+.numbers-text{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    padding: 50%;
+    color: black;
+    background-color: transparent;
+    margin-top: 30px;
+    margin-left: -7px;
+   align-items: center;
+   justify-content: center;
+
+}
+.numbers-text h2{
+    background-color: white;
+    font-weight: 600;
+}
+.navbar__slot6 svg{
+    background-color: white;
+    width: 80px;
+    height: 80px;
+
+}
+.navbar__slot7{
+    display: flex;
+    flex-direction: column;
+    background-color: #322d34;
+    margin-right: 8px;
+}
+.navbar__slot7 input{
+    background-color: #1f1c21;
+    display: flex;
+    margin-top: 6px;
+}
+.navbar__slot7 input::placeholder{
+    background-color: #1f1c21;
+    color: white;
+}
