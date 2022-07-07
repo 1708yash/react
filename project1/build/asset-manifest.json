@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f52d2abf.css",
+    "main.js": "/static/js/main.9cb01d86.js",
+    "static/js/787.142da1d4.chunk.js": "/static/js/787.142da1d4.chunk.js",
+    "static/media/backless_projectimg.png": "/static/media/backless_projectimg.3a609055c701121464ba.png",
+    "index.html": "/index.html",
+    "main.f52d2abf.css.map": "/static/css/main.f52d2abf.css.map",
+    "main.9cb01d86.js.map": "/static/js/main.9cb01d86.js.map",
+    "787.142da1d4.chunk.js.map": "/static/js/787.142da1d4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f52d2abf.css",
+    "static/js/main.9cb01d86.js"
+  ]
+}
