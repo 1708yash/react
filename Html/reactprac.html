@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.18.1/babel.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React learning</title>
+</head>
+<body>
+   <div id="root"></div>
+   <script type="text/bable">
+       function Header(){
+           return(
+               <header>
+                   <h1>Yash is here</h1>
+               </header>
+           );
+       }
+       function App(){
+           <div>
+               <Header/>    
+           </div>
+       }
+       ReactDom.render(
+           React.createElement(
+               <App/>
+           ),
+           document.getElementById("root")
+       );
+   </script>
+</body>
+</html>

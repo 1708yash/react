@@ -170,32 +170,32 @@ const Profile = () => {
           </div>
           <div className="mt-3 create-listing">
             <Link to="/create-listing">
-              <FaArrowAltCircleRight color="primary" /> &nbsp; Sell or Rent Your
-              Home
+              <FaArrowAltCircleRight color="primary" /> &nbsp; Sell or Rent here !!
             </Link>
           </div>
         </div>
+        <div className="container-fluid mt-4 your-listings">
+          {listings && listings?.length > 0 && (
+            <>
+              <h3 className="mt-4">Your Listings</h3>
+              <div>
+                {listings.map((listings) => (
+                  <ListingItem
+                    className="profile-listing"
+                    key={listings.id}
+                    listing={listings.data}
+                    id={listings.id}
+                    onDelete={() => onDelete(listings.id)}
+                    onEdit={() => onEdit(listings.id)}
+                  />
+                ))}
+              </div>
+            </>
+          )}
+        </div>
       </div>
 
-      <div className="container-fluid mt-4 your-listings">
-        {listings && listings?.length > 0 && (
-          <>
-            <h3 className="mt-4">Your Listings</h3>
-            <div>
-              {listings.map((listing) => (
-                <ListingItem
-                  className="profile-listing"
-                  key={listing.id}
-                  listing={listing.data}
-                  id={listing.id}
-                  onDelete={() => onDelete(listing.id)}
-                  onEdit={() => onEdit(listing.id)}
-                />
-              ))}
-            </div>
-          </>
-        )}
-      </div>
+     
     </Layout>
   );
 };

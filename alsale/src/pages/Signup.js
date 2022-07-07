@@ -49,7 +49,7 @@ const Signup = () => {
       navigate("/");
     } catch (error) {
       console.log(error);
-      toast.error("Something Went Wrong");
+      toast.error("You are in");
     }
   };
   return (

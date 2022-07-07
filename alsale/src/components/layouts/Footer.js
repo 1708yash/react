@@ -17,7 +17,7 @@ const Footer = () => {
         />
         From India
       </h3>
-      <h6>All Right Reserved &copy; TECHINFOYT - 2022</h6>
+      <h6>All Right Reserved &copy; YASH TOMAR ORIGINALS</h6>
       <div className="d-flex flex-row p-2">
         <p className="me-4" title="Github">
           <Link to="/">

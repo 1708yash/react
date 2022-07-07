@@ -7,7 +7,7 @@ import "../styles/homepage.css";
 const HomePage = () => {
   const navigate = useNavigate();
   const img1 =
-    "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvcGVydHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60";
+    "https://images.unsplash.com/photo-1579170053380-58064b2dee67?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c2VsbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60";
   const img2 =
     "https://images.unsplash.com/photo-1626178793926-22b28830aa30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvcGVydHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60";
   return (

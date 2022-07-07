@@ -276,7 +276,7 @@ const EditListing = () => {
                     {/* bedrooms */}
                     <div className="mb-3 mt-4">
                         <label htmlFor="bedrooms" className="form-label">
-                            Bedrooms
+                            
                         </label>
                         <input
                             type="number"
@@ -290,7 +290,7 @@ const EditListing = () => {
                     {/* bathrroms */}
                     <div className="mb-3 mt-4">
                         <label htmlFor="bathrooms" className="form-label">
-                            Bathrooms
+                            Availability
                         </label>
                         <input
                             type="number"
@@ -304,7 +304,7 @@ const EditListing = () => {
                     {/* parking */}
                     <div className="mb-3 ">
                         <label htmlFor="parking" className="form-label">
-                            Parking :
+                            Number of Products
                         </label>
                         <div className="d-flex flex-row ">
                             <div className="form-check">

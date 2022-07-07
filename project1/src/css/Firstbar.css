@@ -1,0 +1,215 @@
+.main{
+    background-color: #322d34;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.firstbar{
+    display: flex;
+    background-color: #322d34;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    width: 70%;
+    border-radius: 5px;
+}
+.btn button{
+position: relative;
+    background-color: #322d34;
+    border: none;
+    display: flex;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 15px;
+    width: 60px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    border-style: none;
+    font-size: small;
+
+}
+.btn button:hover{
+    background-color: #393840;
+    border-style: none;
+    display: flex;
+}
+.btn button:after {
+ 
+    background: #393840;
+    border: none;
+    border-style: none;
+    display: flex;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    size: 30%;
+    transition: all 0.8s
+}
+.main__first{
+    display: flex;
+    flex-direction: row;
+    height: 48px;
+    width: 150px;
+    margin-top: 2px;
+    background-color: #322d34;
+    
+   
+}
+.main__txt{
+    display: flex;
+    background-color: #322d34;
+    width: 100%;
+    flex-direction: column;
+}
+.main__first p{
+    background-color: #322d34;
+    font-size: large;
+    color: #FFFFFF;
+    margin-top: 17px;
+    justify-items: center;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    height: 40px;
+    width: 50px;
+
+}
+.first__buts{
+    display: flex;
+    margin-left: 20px;
+    background-color: #322d34;
+    height: 48px;
+    justify-content: space-evenly;
+    margin-right: 30px;
+    margin-left: 30px;
+    outline: none;
+}
+.first__buts button{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 50px;
+    border: none;
+    outline: none!important;
+    color: rgb(223, 241, 241);
+    font-weight: lighter;
+    background-color: #322d34;
+
+}
+.main__first{
+    display: flex;
+    flex-direction: row;
+    height: 48px;
+    width: 150px;
+    margin-top: 2px;
+    background-color: #322d34;
+    
+   
+}
+.main__first p{
+    background-color: #322d34;
+    font-size: large;
+    color: #FFFFFF;
+    margin-top: 20px;
+    justify-items: center;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    height: 40px;
+    width: 50px;
+
+}
+.linetext{
+    background-color: #322d34;
+    display: flex;
+    margin-top: 26px;
+    margin-left: 400px;
+
+}
+.linetext p{
+    background-color: #322d34;
+        display: flex;
+       
+        font-size:large;
+        color: white;
+        margin-top:20px;
+
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    background-color: #322d34;
+
+}
+.border{
+    display: flex;
+    flex-direction:row;
+    background-color: #322d34;
+    height: 170px;
+    width: 66%;
+    margin: 10px;
+    
+}
+.border__btn{
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    background-color: #322d34;
+}
+.border__btn2 {
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    background-color: #322d34;
+   margin-top: -50px;
+}
+.mn{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    background-color: #322d34;
+}
+.border p{
+    display: flex;
+    height: 35px;
+    width: 70px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    outline-width: none;
+    outline-style: none;
+    margin-left: -7px;
+    margin-top: 30px;
+    
+}
+.circle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    color: white;
+    background: rgb(50, 45, 52);
+    background-image: linear-gradient(180deg, hsla(282, 6%, 45%, 1) 40%, hsla(0, 0%, 9%, 1) 91%);
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: 30px;
+    
+}
+.sep{
+    display: flex;
+    flex-direction: row;
+    background-color: #322d34;
+    padding-left: 90px;
+}

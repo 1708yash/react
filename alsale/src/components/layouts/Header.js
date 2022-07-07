@@ -10,7 +10,7 @@ const Header = () => {
       <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-sm-top">
         <div className="container">
           <Link className="navbar-brand" to="/">
-            <BsBuilding size={30} className="me-2" /> House Marketplace
+            <BsBuilding size={30} className="me-2" /> CUSAST
           </Link>
           <button
             className="navbar-toggler"

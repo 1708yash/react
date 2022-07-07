@@ -1,6 +1,6 @@
 userid =F1wIDpj7CDeSHxh3q9IsWgStBu22
 geocode-api :AIzaSyDcPzVwo0hYZ-bZGTl0-U65-CZhNPUa6R4
-rules_version='2;
+rules_version='2'   ;
 service colud.firestore {
     match/databases/{database}/documents{
         //Listings
