@@ -26,3 +26,21 @@
     }
 
 }
+.imgbox{
+    width: 100px;
+    height: 400px;
+}
+.slider__wheel{
+   
+       justify-content: center;
+        background: rgb(71, 13, 33) !important;
+            background: linear-gradient(90deg,
+                    rgba(71, 13, 33, 1) 0%,
+                    rgba(156, 15, 72, 1) 100%) !important;
+        display: flex;
+            -webkit-mask-size: 70%;
+            mask-size: 70%;
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+        margin-top: 0px;
+}

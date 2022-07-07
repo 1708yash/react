@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { ImLocation2 } from "react-icons/im";
 import { db } from "../firebase.config.js";
 import "../styles/slider.css";
+import { Carousel } from 'react-bootstrap'
 import {
     collection,
     getDoc,
@@ -13,10 +14,11 @@ import {
 import { useNavigate } from "react-router-dom";
 import SwipeCore, { EffectCoverflow, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper-bundle.min.css";
-import "swiper/swiper.min.css";
-import Spinner from "./Spinner";
-
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import Spinner from '../components/Spinner'
 //config
 SwipeCore.use([EffectCoverflow, Pagination]);
 
@@ -57,16 +59,16 @@ const Slider = () => {
                     <Spinner />
                 ) : (
                     <Swiper
-                        effect={"coverflow"}
+                        effect={"none"}
                         grabCursor={true}
-                        centeredSlides={true}
+                        centeredSlides={false}
                         slidesPerView={1}
                         coverflowEffect={{
                             rotate: 50,
                             stretch: 0,
                             depth: 100,
                             modifier: 1,
-                            slideShadows: true,
+                            slideShadows: false,
                         }}
                         pagination={true}
                         className="mySwipe"
@@ -74,24 +76,48 @@ const Slider = () => {
                         {listings.map(({ data, id }) => (
                             <SwiperSlide
                                 key={id}
-                                onClick={() => {
-                                    navigat(`/category/${data.type}/${id}`);
-                                }}
+                                onClick={() => { }}
                             >
-                                <img
-                                    src={data.imgUrls[0]}
-                                    alt={data.name}
-                                    className="slider-img"
-                                />
-                                <h4 className=" text-light p-4 m-0 ">
-                                    {/* <img alt="user pic" src={userPic} height={35} width={35} /> */}
-                                    <ImLocation2 size={20} className="ms-2" /> Recently Added :{" "}
-                                    <br />
-                                    <span className="ms-4 mt-2"> {data.name}</span>
-                                    <span className="ms-2">
-                                        | Price ( $ {data.regularPrice} )
-                                    </span>
-                                </h4>
+                                <div className="slider__wheel">
+                                    <Carousel>
+                                        <Carousel.Item>
+                                            <img
+                                                className="d-block w-100 "
+                                                src="https://media.istockphoto.com/photos/fingers-plugging-usb-cable-into-back-of-laptop-picture-id172161962?b=1&k=20&m=172161962&s=170667a&w=0&h=FPpY5JSpbIc7Dlmfr4gLxeLN4KK_uWwCg0M9rN6B2MA="
+                                                alt="First slide"
+                                            />
+                                            <Carousel.Caption>
+                                                <h3>Get It fast</h3>
+                                                <p> Buy more and get exotic sales on your personal account on montlhy terms.</p>
+                                            </Carousel.Caption>
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                                className="d-block w-100"
+                                                src="https://images.unsplash.com/photo-1628832307345-7404b47f1751?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8OGslMjBsYXB0b3B8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                                                alt="Second slide"
+                                            />
+
+                                            <Carousel.Caption>
+                                                <h3>Limited Edition content is live</h3>
+                                                <p>Feel yourdelf special because you are getting the deal of the day</p>
+                                            </Carousel.Caption>
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <img
+                                                className="d-block w-100"
+                                                src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGFwdG9wc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000"
+                                                alt="Third slide"
+                                            />
+
+                                            <Carousel.Caption>
+                                                <h3>Laptops are the life of every student</h3>
+                                                <p>Best range of secondhand laptops for students according to their needs.</p>
+                                            </Carousel.Caption>
+                                        </Carousel.Item>
+                                    </Carousel>
+                                </div>
+                               
                             </SwiperSlide>
                         ))}
                     </Swiper>

@@ -25,6 +25,8 @@ const CreateListing = () => {
         bathrooms: 1,
         parking: false,
         furnished: false,
+        firsthand:false,
+        damage:false,
         address: "",
         offer: false,
         regularPrice: 0,
@@ -41,6 +43,8 @@ const CreateListing = () => {
         bathrooms,
         parking,
         furnished,
+        damage,
+        firsthand,
         address,
         offer,
         regularPrice,
@@ -145,6 +149,7 @@ const CreateListing = () => {
                                 break;
                             case "running":
                                 console.log("upload is runnning");
+                                toast.success("uploaded");
                         }
                     },
                     (error) => {
@@ -175,7 +180,7 @@ const CreateListing = () => {
             geoLocation,
             timestamp: serverTimestamp(),
         };
-        formData.location = address;
+        formData.location = address;        
         delete formDataCopy.images;
         !formDataCopy.offer && delete formDataCopy.discountedPrice;
         const docRef = await addDoc(collection(db, "listings"), formDataCopy);
@@ -238,7 +243,7 @@ const CreateListing = () => {
                     {/* bedrooms */}
                     <div className="mb-3 mt-4">
                         <label htmlFor="bedrooms" className="form-label">
-                            Bedrooms
+                            Availability :
                         </label>
                         <input
                             type="number"
@@ -251,8 +256,8 @@ const CreateListing = () => {
                     </div>
                     {/* bathrroms */}
                     <div className="mb-3 mt-4">
-                        <label htmlFor="bathrooms" className="form-label">
-                            Bathrooms
+                        <label htmlFor="number of products" className="form-label">
+                            Number Of Products:
                         </label>
                         <input
                             type="number"
@@ -265,8 +270,8 @@ const CreateListing = () => {
                     </div>
                     {/* parking */}
                     <div className="mb-3 ">
-                        <label htmlFor="parking" className="form-label">
-                            Parking :
+                        <label htmlFor="firsthand" className="form-label">
+                            Firsthand:
                         </label>
                         <div className="d-flex flex-row ">
                             <div className="form-check">
@@ -275,8 +280,8 @@ const CreateListing = () => {
                                     type="radio"
                                     value={true}
                                     onChange={onChangeHandler}
-                                    name="parking"
-                                    id="parking"
+                                    name="firsthand"
+                                    id="firsthand"
                                 />
                                 <label className="form-check-label" htmlFor="yes">
                                     Yes
@@ -286,11 +291,11 @@ const CreateListing = () => {
                                 <input
                                     className="form-check-input"
                                     type="radio"
-                                    name="parking"
+                                    name="firsthand"
                                     value={false}
                                     defaultChecked
                                     onChange={onChangeHandler}
-                                    id="parking"
+                                    id="firsthand"
                                 />
                                 <label className="form-check-label" htmlFor="no">
                                     No
@@ -300,8 +305,8 @@ const CreateListing = () => {
                     </div>
                     {/* furnished */}
                     <div className="mb-3 ">
-                        <label htmlFor="furnished" className="form-label">
-                            Furnished :
+                        <label htmlFor="damage" className="form-label">
+                            Any Damage:
                         </label>
                         <div className="d-flex flex-row ">
                             <div className="form-check">
@@ -310,8 +315,8 @@ const CreateListing = () => {
                                     type="radio"
                                     value={true}
                                     onChange={onChangeHandler}
-                                    name="furnished"
-                                    id="furnished"
+                                    name="damage"
+                                    id="damage"
                                 />
                                 <label className="form-check-label" htmlFor="yes">
                                     Yes
@@ -321,11 +326,11 @@ const CreateListing = () => {
                                 <input
                                     className="form-check-input"
                                     type="radio"
-                                    name="furnished"
+                                    name="damage"
                                     value={false}
                                     defaultChecked
                                     onChange={onChangeHandler}
-                                    id="furnished"
+                                    id="damage"
                                 />
                                 <label className="form-check-label" htmlFor="no">
                                     No

@@ -5,10 +5,10 @@ import { db } from "../firebase.config.js";
 import { getAuth } from "firebase/auth";
 import { useNavigate, Link, useParams } from "react-router-dom";
 import Spinner from "../components/Spinner";
-import SwipeCore, { EffectCoverflow, Navigation, Pagination } from "swiper";
+import SwipeCore, { EffectCoverflow,Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper-bundle.min.css";
-import "swiper/swiper.min.css";
+import 'swiper/css'
+import 'swiper/css/bundle';
 import "../styles/listing.css";
 import {
     FaBed,
@@ -79,42 +79,39 @@ const Listing = () => {
                     <h3>{listing.name}</h3>
                     <h6>
                         Price :{" "}
-                        {listing.offer ? listing.discountedPrice : listing.regularPrice} /
+                        {listing.offer ? listing.offerPrice  : listing.regularPrice} /
                         RS
                     </h6>
-                    <p>Property For : {listing.type === "rent" ? "Rent" : "Sale"}</p>
+                    <p>Product For : {listing.type === "rent" ? "Rent" : "Sale"}</p>
                     <p>
                         {listing.offer && (
                             <span>
-                                {listing.regularPrice - listing.discountedPrice} Discount
+                                {listing.regularPrice - listing.offerPrice} Discount
                             </span>
                         )}
                     </p>
                     <p>
-                        <FaBed size={20} /> &nbsp;
-                        {listing.bedrooms > 1
-                            ? `${listing.bedrooms} Bedrooms`
-                            : "1 Bedroom"}
+                        
+                        {listing.available > 1
+                            ? `${listing.available} Availability`
+                            : "1 Availability"}
                     </p>
                     <p>
-                        <FaBath size={20} /> &nbsp;
-                        {listing.bathrooms > 1
-                            ? `${listing.bathrooms} bathrooms`
-                            : "1 Bathroom"}
+                       
+                        {listing.number > 1
+                            ? `${listing.number} number`
+                            : "1 number"}
                     </p>
+                   
                     <p>
-                        <FaParking size={20} /> &nbsp;
-                        {listing.parking ? `Parking spot` : "no spot for parking"}
-                    </p>
-                    <p>
-                        <FaHouseDamage size={20} /> &nbsp;
-                        {listing.furnished ? `furnished house` : "not furnished"}
+                       
+                        {listing.available ? `available` : "not available"}
                     </p>
                     <Link
                         className="btn btn-success"
                         to={`/contact/${listing.useRef}?listingName=${listing.name}`}
                     >
-                        Contact Landlord <FaArrowCircleRight size={20} />
+                        Contact <FaArrowCircleRight size={20} />
                     </Link>
                 </div>
             </div>

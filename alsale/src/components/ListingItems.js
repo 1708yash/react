@@ -19,21 +19,21 @@ const ListingItem = ({ listing, id, onDelete, onEdit }) => {
                 <p>
                   <GiTakeMyMoney /> RS :{" "}
                   {listing.offer
-                    ? listing.discountedPrice
+                    ? listing.offerPrice
                     : listing.regularPrice}{" "}
                   {listing.type === "rent" && " / Month"}
                 </p>
                 <p>
-                  <FaBed /> &nbsp;
-                  {listing.bedrooms > 1
-                    ? `${listing.bedrooms} Bedrooms`
-                    : "1 Bedreoom"}
+              
+                  {listing.available > 1
+                    ? `${listing.available} Availability`
+                    : "1 Available"}
                 </p>
                 <p>
-                  <FaBath /> &nbsp;
-                  {listing.bathrooms > 1
-                    ? `${listing.bathrooms} Bathrooms`
-                    : "1 Bathroom"}
+                  
+                  {listing.number > 1
+                    ? ` Number of Products ${listing.number} `
+                    : "1 Product available"}
                 </p>
               </div>
             </div>
